@@ -16,7 +16,7 @@ Since the Azure CLI (`az`) is not installed on the target machine, the entire en
 
 ### 1. Initial Access & Identity Theft (IMDS)
 
-After gaining initial SSH access to the `LinuxVM` using compromised credentials, the first step is to check if the virtual machine has a System-Assigned Managed Identity. We query the local Azure Instance Metadata Service (IMDS) at `169.254.169.254` to extract OAuth2 access tokens.
+After gaining initial SSH access to the `LinuxVM` using compromised credentials provided in the scenario, the first step is to check if the virtual machine has a System-Assigned Managed Identity. We query the local Azure Instance Metadata Service (IMDS) at `169.254.169.254` to extract OAuth2 access tokens.
 
 We extract two tokens: one for the Azure Resource Manager (ARM) and one for Azure Key Vault.
 
