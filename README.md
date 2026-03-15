@@ -113,7 +113,3 @@ To prevent this attack path, cloud administrators should enforce the **Principle
 1. Never assign broad management roles (e.g., `Owner` or `Contributor`) to virtual machines unless strictly required for specific automation tasks.
 2. Utilize custom roles with granular permissions tailored strictly to the VM's functional requirements.
 3. Monitor and audit Azure Activity Logs for unexpected `Microsoft.Authorization/roleAssignments/write` operations initiated by Service Principals or Managed Identities.
-
----
-
-Would you like me to help you format a quick `git commit` command block so you can push this directly from your terminal, or are you good to upload it manually?
