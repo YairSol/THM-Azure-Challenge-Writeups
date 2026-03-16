@@ -59,7 +59,7 @@ The output revealed a critical over-permissive wildcard: `"Microsoft.Compute/vir
 Abusing the `Virtual Machine Contributor` permissions, I targeted the second machine, `LinuxVM1`. Using the `VMAccessForLinux` extension (a legitimate Azure administrative tool designed for password resets), I forced a password change for the user `tyler` on `LinuxVM1`:
 
 ```bash
-azureuser@LinuxVM:~$ az vm user update -u tyler -p 'Pwned123!' -n LinuxVM1 -g <ResourceGroup>
+azureuser@LinuxVM:~$ az vm user update -u tyler -p 'PassPwned1!' -n LinuxVM1 -g <ResourceGroup>
 
 ```
 
